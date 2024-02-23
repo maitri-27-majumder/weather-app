@@ -1,0 +1,44 @@
+.weather-loader {
+  height: 92vh;
+  width: 92vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-container {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.dashboard-container.mist {
+  background-image: url("../assets/bg/mist.png");
+}
+.dashboard-container.rain {
+  background-image: url("../assets/bg/rain.png");
+}
+.dashboard-container.cloudy {
+  background-image: url("../assets/bg/cloudy.png");
+}
+.dashboard-container.night {
+  background-image: url("../assets/bg/night.png");
+}
+.dashboard-container.clear {
+  background-image: url("../assets/bg/clear.png");
+}
+.dashboard-container.thunderstorm {
+  background-image: url("../assets/bg/thunderstorm.png");
+}
+.dashboard-container.snow {
+  background-image: url("../assets/bg/snow.png");
+}
+.dashboard-container.cloud-at-night {
+  background-image: url("../assets/bg/cloud-at-night.png");
+}
+@media (max-width: 1000px) {
+  .dashboard-container {
+    display: block;
+  }
+}

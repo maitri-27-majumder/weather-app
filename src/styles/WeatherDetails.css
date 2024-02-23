@@ -1,0 +1,106 @@
+.weather-details-container {
+  flex: 1;
+  height: 98vh;
+  padding: 20px;
+  backdrop-filter: blur(6px);
+  color: #fff;
+  border-left: 6px solid rgba(252, 252, 252, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: auto;
+}
+.weather-details-container > .weather-details-forecast-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.weather-details-container
+  > .weather-details-forecast-container
+  > .weather-details-forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.weather-details-container
+  > .weather-details-forecast-container
+  > .weather-details-forecast
+  > .weather-details-forecast-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.weather-details-container
+  > .weather-details-forecast-container
+  > .weather-details-forecast
+  > .weather-details-forecast-list
+  > .weather-details-forecast-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-details-container
+  > .weather-details-forecast-container
+  > .weather-details-forecast
+  > .weather-details-forecast-list
+  > .weather-details-forecast-list-item
+  > div:last-child {
+  display: flex;
+  gap: 16px;
+}
+.weather-details-container
+  > .weather-details-forecast-container
+  > .weather-details-forecast
+  > .weather-details-hourly-forecast-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.weather-details-container
+  > .weather-details-forecast-container
+  > .weather-details-forecast
+  > .weather-details-hourly-forecast-list
+  > .weather-details-hourly-forecast-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-details-container
+  > .weather-details-forecast-container
+  > .weather-details-forecast
+  > .weather-details-hourly-forecast-list
+  > .weather-details-hourly-forecast-list-item
+  > div:first-child {
+  display: flex;
+  gap: 28px;
+}
+.weather-details-container
+  > .weather-details-forecast-container
+  > .weather-details-forecast
+  > .weather-details-hourly-forecast-list
+  > .weather-details-hourly-forecast-list-item
+  > div:first-child
+  > img {
+  transform: scale(0.6);
+}
+@media (max-width: 1000px) {
+  .weather-details-container {
+    align-items: center;
+    backdrop-filter: none;
+  }
+  .weather-details-container > .weather-details-forecast-container {
+    backdrop-filter: blur(6px);
+  }
+  .weather-details-container
+    > .weather-details-forecast-container
+    > .weather-details-forecast {
+    /* max-width: 500px; */
+    /* width: 100%; */
+    width: min(500px, 50vw);
+    min-width: 400px;
+  }
+  .weather-details-container > .weather-location-input {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 45vw;
+  }
+}
