@@ -85,7 +85,7 @@
   .weather-details-container {
     align-items: center;
     backdrop-filter: none;
-    height: calc(98vh - 300px);
+    height: calc(98vh - 350px);
   }
   .weather-details-container > .weather-details-forecast-container {
     backdrop-filter: blur(6px);
@@ -97,7 +97,7 @@
     /* max-width: 500px; */
     /* width: 100%; */
     width: min(500px, 50vw);
-    min-width: 400px;
+    min-width: 300px;
   }
   .weather-details-container > .weather-location-input {
     position: absolute;
